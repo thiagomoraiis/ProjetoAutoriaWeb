@@ -1,9 +1,12 @@
 *{
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #2190FF;
     margin: 0;
     padding: 0;
+}
+body{
+    color: #2190FF;
+    box-sizing: border-box;
 }
 ul{
     margin-top: 55px;
@@ -14,20 +17,114 @@ ul{
     justify-content: center;
 }
 nav ul li,div{
-    padding: 13px;
+    padding: 15px;
 }
 nav{
     height: 100%;
     background-color: #FCFCFC;
     position: fixed;
     width: 50px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #f1f1f1;
 }
-div img{
-    /* margin: 0; */
+div img:not(.hr img){
+    height: 43px;
+    width: 43px;
     margin: auto;
     padding-left: 6px;
 }
-div li:first-child{
+.flex{
+    display: grid;
+    grid-template-columns: 45px  auto;
+    align-items: center;
+    justify-content:space-between;
+    padding: 12px 10px 12px 10px;
+}
+a{
+    text-decoration: none;
+}
+.flex a{
+    border-radius: 3px;
+    width: 26px;
+    padding: 5px;
+    background-color: #2190FF;
+    color: #f1f1f1;
+}
+input[type="search"]{
+    padding-left: 10px;
+    height: 22px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 12px 0 0 12px ;
+}
+input[type="search"]:focus{
+    outline: 0;
+    border: 1px solid #ccc;
+}
+.hr{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0 5px 0 5px;
+}
+.input-header{
+    display: flex;
+    align-items: center;
     padding: 0;
 }
+span{
+    padding: 0 8px;
+    display: flex;
+    background-color: #f1f1f1;
+    align-items: center;
+    height: 22px;
+    border-radius: 0 12px 12px 0 ;
+}
+.flex .hr{
+    align-items: flex-start;
+    top: 0;
+}
+hr{
+    margin: auto;
+    min-width: calc(100vw - 50px);
+    border: 1px solid #f1f1f1;
+}
+
+/* Conteudo Principal(Main)  */
+.div-main{
+    padding-left: 90px;
+}
+
+.heading{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.heading h2{
+    font-size:x-large;
+}
+.heading select{
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 5px 0 5px;
+    width: 80px;
+}
+.heading select{
+    outline: 0;
+    border: 1px solid #ccc;
+    color: #8f8f8f;
+}
+.section-disciplina{
+    color: #818181;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 150px;
+    height: 200px;
+}
+.disciplina-1:first-child{
+    background-color: #2190FF;
+    border-radius: 8px 8px 0 0;
+}
+/* .disciplina-1:last-child{
+    padding: 0;
+} */

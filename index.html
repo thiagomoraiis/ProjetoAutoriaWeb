@@ -10,10 +10,6 @@
 <body>
     <nav>
         <ul>
-            <div>
-                <li><a href=""><img src="./img/globe2.svg" alt=""></a></li>
-                <p><strong>SAEF</strong></p>
-            </div>
             <li><a href=""><img src="./img/pencil-square.svg" alt=""></a></li>
             <li><a href=""><img src="./img/journal-check.svg" alt=""></a></li>
             <li><a href=""><img src="./img/chat.svg" alt=""></a></li>
@@ -23,9 +19,38 @@
         </ul>
     </nav>
     <header>
-        <div style="margin: left 20px;;">
-            <img src="./img/Imagem1.png" alt="">
+        <div class="flex">
+            <img style="padding-left:110px;" src="./img/Imagem1.png" alt="">
+            <div class="hr">
+                <a href="">Login</a>
+                <div class="input-header">
+                    <input type="search" name="pesquisar" id="pesquisar">
+                    <span><img src="./img/book.svg" alt=""></span>
+                    <img style="width: 22px;height:22px;margin-left: 5px;" src="./img/undraw_pic_profile_re_7g2h.svg" alt="">
+                </div>
+            </div>
         </div>
+        <hr>
     </header>
+    <main>
+        <div class="div-main">
+            <div class="heading">
+                <h2>Disciplinas</h2>
+                <select name="select" id="select">
+                    <option value="default">Selecione</option>
+                    <option value="1">1°</option>
+                    <option value="2">2°</option>
+                    <option value="3">3°</option>
+                    <option value="3">4°</option>
+                </select>
+            </div>
+            <section>
+                <div class="section-disciplina">
+                    <div class="disciplina-1"></div>
+                    <div class="disciplina-1">Autoria Web</div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
