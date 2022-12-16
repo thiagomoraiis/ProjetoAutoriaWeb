@@ -118,7 +118,7 @@ hr{
     color: #818181;
     display: grid;
     grid-template-rows: 70% 25%;
-    grid-template-columns: 150px;
+    grid-template-columns: 100%;
     height: 100%;
 }
 .disciplina-1:first-child{
@@ -126,24 +126,30 @@ hr{
     border-radius: 8px 8px 0 0;
 }
 @media screen and (max-width:700px) {
-    .hr, .heading{
+    .hr, .heading:not(.heading .select, h2 ){
         display: none;
     }
 }
 .section-1{
-    height:180px;
+    height:230px;
+    width: 250px;
 }
 .grid-layout{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: auto;
+    flex-wrap: wrap;
 
 }
-.section-1{
-    
-}
 @media screen and (max-width:700px) {
+    nav{
+        display: none;
+    }
+
     .grid-layout{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap ;
     }
+    
 }
