@@ -1,7 +1,3 @@
-
-
-
-
 *{
     font-size: 10px;
     margin: 0;
@@ -75,13 +71,14 @@ input[type="search"]:focus{
     align-items: center;
     padding: 0;
 }
-span{
-    padding: 0 8px;
+button{
+    padding: 0 8px 0 5px;
     display: flex;
     background-color: #f1f1f1;
     align-items: center;
     height: 22px;
     border-radius: 0 12px 12px 0 ;
+    border: 1px solid #f1f1f1;
 }
 .flex .hr{
     align-items: flex-start;
@@ -105,6 +102,9 @@ hr{
 }
 .heading h2{
     font-size:x-large;
+}
+header .flex img:first-child{
+    padding-left: 110px;
 }
 .heading select{
     height: 22px;
@@ -158,8 +158,25 @@ hr{
     .hr, .heading:not(.heading .select, h2 ){
         display: none;
     }
+    header .flex img:first-child{
+        padding-left: 50px;
+    }
+    .div-main{
+        margin: auto;
+        justify-content: center;
+        padding: 0;
+    }
+    .grid-layout{
+        /* margin: auto; */
+        /* width: fit-content; */
+        justify-content: center;
+    }
+    nav{
+        display: none;
+    }
+    
 }
-@media screen and (max-width:700px) {
+/* @media screen and (max-width:700px) {
     nav{
         display: none;
     }
@@ -171,4 +188,4 @@ hr{
         flex-wrap: wrap ;
     }
     
-}
+} */
