@@ -9,7 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul{
+nav ul{
     margin-top: 55px;
     list-style: none;
     display: flex;
@@ -19,6 +19,9 @@ ul{
 }
 nav ul li,div{
     padding: 10px 15px 10px 15px;
+}
+main{
+    min-height: calc(100vh - 187px);
 }
 nav{
     height: 100%;
@@ -146,6 +149,30 @@ div.img-header img:first-child{
     display: grid;
     grid-template-rows: 75% 25%;
     height: 100%;
+}
+footer{
+    background-color: #F5F5F5;
+}
+.rodape, .links-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links-rodape{
+    align-items: flex-start;
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    color: #2190FF;
+    text-decoration: none;
+}
+.logo-saef{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .section-1{
     border: 1px solid #f1f1f1;
