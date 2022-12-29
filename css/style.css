@@ -21,7 +21,7 @@ nav ul li,div{
     padding: 10px 15px 10px 15px;
 }
 main{
-    min-height: calc(100vh - 187px);
+    min-height: calc(100vh - 164.16px);
 }
 nav{
     height: 100%;
@@ -30,11 +30,18 @@ nav{
     width: 50px;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img){
+div img:not(.hr img, .icons ul a img){
     height: 43px;
     width: 43px;
     margin: auto;
     padding-left: 6px;
+}
+.icons ul{
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
 }
 .flex{
     display: grid;
@@ -55,8 +62,8 @@ a{
 }
 input[type="search"]{
     padding-left: 10px;
-    height: 22px;
-    width: 200px;
+    height: 32px;
+    width: 238px;
     border: 1px solid #ccc;
     border-radius: 12px 0 0 12px ;
 }
@@ -75,17 +82,51 @@ input[type="search"]:focus{
     align-items: center;
     padding: 0;  
 }
+#disc-azul{
+    background-color: #0277BD;
+}
+#disc-laranja{
+    background-color: #D24031;
+}
+#disc-verde{
+    background-color: #00887A;
+}
+#disc-amarelo{
+    background-color: #E6E951;
+}
+#disc-roxo{
+    background-color: #7627BB;
+}
+#disc-salmao{
+    background-color: #F85C5C;
+}
+#disc-cinza{
+    background-color: #566E7A;
+}
+#disc-verde2{
+    background-color: #32AC71;
+}
+#disc-rosa{
+    background-color: #D91A60;
+}
+#disc-azulclaro{
+    background-color: #54A8D2;
+}
+#disc-laranjaclaro{
+    background-color: #FE9365;
+}
 button{
+    width: 36;
     padding: 0 8px 0 5px;
     display: flex;
     background-color: #f1f1f1;
     align-items: center;
-    height: 22px;
+    height: 32px;
     border-radius: 0 12px 12px 0 ;
     border: 1px solid #f1f1f1;
 }
 .flex .hr{
-    align-items: flex-start;
+    align-items: center;
     top: 0;
 }
 hr{
@@ -126,7 +167,7 @@ div.img-header{
     
 }
 div.flex > div.img-header{
-    padding-left: 90px;
+    padding: 0 0 0 90px;
 }
 div.img-header img:first-child{
     display: none;
@@ -155,11 +196,19 @@ footer{
 }
 .rodape, .links-rodape{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.redes-sociais h3>strong .links-rodape a, strong{
+    font-size: small;
 }
 .links-rodape{
+    column-gap: 20px;
     align-items: flex-start;
+}
+.links-rodape ul li{
+    padding-bottom: 4px;
 }
 ul{
     list-style-type: none;
@@ -179,6 +228,13 @@ li a{
     border-radius: 5px;
     height:280px;
     width: 300px;
+}
+.direitos, .direitos h3{
+    width: 300px;
+    margin: auto;
+}
+.direitos h3{
+    font-size: larger;
 }
 .disciplina-1:last-child{
     padding: 0;
@@ -223,5 +279,11 @@ li a{
 
     .heading h2{
         padding-left: 35px;
+    }
+    .links-rodape{
+        flex-direction: column;
+    }
+    .direitos{
+        width: fit-content;
     }
 }
