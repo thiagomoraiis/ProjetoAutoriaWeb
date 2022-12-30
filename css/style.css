@@ -13,6 +13,7 @@ body{
 }
 .redes-sociais{
     flex-wrap: wap;
+    /* max-width: 200px; */
 }
 nav ul{
     margin-top: 55px;
@@ -35,7 +36,7 @@ nav{
     width: 50px;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img, #logo-empe){
+div img:not(.hr img, .icons ul a img){
     height: 50px;
     width: 72px;
     margin: auto;
@@ -45,8 +46,9 @@ div img:not(.hr img, .icons ul a img, #logo-empe){
     padding-top: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     column-gap: 8px;
+    flex-wrap: wrap;
 }
 .flex{
     display: grid;
@@ -213,17 +215,21 @@ footer{
     width: 25px;
     height: 25px;
 }
-.rodape, .links-rodape{
+.rodape{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.links-rodape{
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 .redes-sociais h3>strong .links-rodape a, strong{
     font-size:medium;
 }
 .links-rodape{
-    min-width: 200px;
     column-gap: 20px;
     align-items: flex-start;
 }
@@ -278,7 +284,7 @@ li a{
         padding-left: 25px;
     }
     div.img-header img:first-child{
-        display: inline-block;
+        display: block;
     }
     div.flex > div.img-header {
         padding-left: 0px;
@@ -300,17 +306,26 @@ li a{
     div.flex > div.img-header {
         padding-left: 0px;
     }
-    .links-rodape{
-        flex-direction: column;
+    .img-header img:last-child, .img-header img:first-child{
+        padding: 0;
     }
     .direitos{
         width: fit-content;
     }
     .logo-saef h3{
-        max-width: 200px;
+        max-width: 118px;
     }
     .direitos h3{
         max-width: 200px;
     }
-    
+}
+@media screen and (max-width:699px){
+    .links-rodape{
+        flex-direction: column;
+        margin: auto;
+    }
+    .icons{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 }
