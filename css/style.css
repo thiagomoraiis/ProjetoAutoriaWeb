@@ -8,7 +8,12 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.links-rodape ul{
+    width:60px;
+}
+.redes-sociais{
+    flex-wrap: wap;
+}
 nav ul{
     margin-top: 55px;
     list-style: none;
@@ -30,18 +35,18 @@ nav{
     width: 50px;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img){
-    height: 43px;
-    width: 43px;
+div img:not(.hr img, .icons ul a img, #logo-empe){
+    height: 50px;
+    width: 72px;
     margin: auto;
-    padding-left: 6px;
+    padding-left: 96px;
 }
 .icons ul{
     padding-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 4px;
+    column-gap: 8px;
 }
 .flex{
     display: grid;
@@ -115,6 +120,13 @@ input[type="search"]:focus{
 #disc-laranjaclaro{
     background-color: #FE9365;
 }
+#logo-deitado{
+    width: 130px;
+    height: 35px;
+}
+.logo-saef > a > img#logo-empe{
+    height: 60px;
+}
 button{
     width: 36;
     padding: 0 8px 0 5px;
@@ -124,6 +136,9 @@ button{
     height: 32px;
     border-radius: 0 12px 12px 0 ;
     border: 1px solid #f1f1f1;
+}
+.heading h2{
+    padding-left: 0;
 }
 .flex .hr{
     align-items: center;
@@ -194,6 +209,10 @@ div.img-header img:first-child{
 footer{
     background-color: #F5F5F5;
 }
+.size-icons{
+    width: 25px;
+    height: 25px;
+}
 .rodape, .links-rodape{
     display: flex;
     align-items: flex-start;
@@ -201,9 +220,10 @@ footer{
     flex-wrap: wrap;
 }
 .redes-sociais h3>strong .links-rodape a, strong{
-    font-size: small;
+    font-size:medium;
 }
 .links-rodape{
+    min-width: 200px;
     column-gap: 20px;
     align-items: flex-start;
 }
@@ -222,6 +242,7 @@ li a{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    row-gap: 10px;
 }
 .section-1{
     border: 1px solid #f1f1f1;
@@ -230,11 +251,14 @@ li a{
     width: 300px;
 }
 .direitos, .direitos h3{
-    width: 300px;
+    width: 375px;
     margin: auto;
 }
 .direitos h3{
-    font-size: larger;
+    font-size: medium;
+}
+.logo-saef h3{
+    font-size: medium;
 }
 .disciplina-1:last-child{
     padding: 0;
@@ -272,13 +296,9 @@ li a{
     }
     
 }
-@media screen and (max-width:400px){
+@media screen and (min-width:400px){
     div.flex > div.img-header {
         padding-left: 0px;
-    }
-
-    .heading h2{
-        padding-left: 35px;
     }
     .links-rodape{
         flex-direction: column;
@@ -286,4 +306,11 @@ li a{
     .direitos{
         width: fit-content;
     }
+    .logo-saef h3{
+        max-width: 200px;
+    }
+    .direitos h3{
+        max-width: 200px;
+    }
+    
 }
