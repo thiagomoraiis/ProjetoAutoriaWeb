@@ -52,6 +52,15 @@ div img:not(.hr img, .icons ul a img){
 .heading h2{
     width: fit-content;
 }
+.div-select{
+    display: flex;
+    flex-direction: column;
+}
+.div-select label{
+    color: #929292;
+    font-size: small;
+    padding: 0 0 2px 4px;
+}
 .flex{
     display: grid;
     grid-template-columns: auto  auto;
@@ -353,7 +362,7 @@ li a{
         max-width: 374px;
     }
     .rodape{
-        padding-left: 50px;
+        padding-left: 64px;
     }
     /* .img-header img:last-child{
         padding-left: 0;
