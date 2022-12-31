@@ -48,7 +48,9 @@ div img:not(.hr img, .icons ul a img){
     align-items: center;
     justify-content: flex-start;
     column-gap: 8px;
-    flex-wrap: wrap;
+}
+.heading h2{
+    width: fit-content;
 }
 .flex{
     display: grid;
@@ -63,7 +65,7 @@ a{
 .flex a{
     border-radius: 3px;
     width: 26px;
-    padding: 5px;
+    padding: 8px 12px;
     background-color: #2190FF;
     color: #f1f1f1;
 }
@@ -127,6 +129,7 @@ input[type="search"]:focus{
     height: 35px;
 }
 .logo-saef > a > img#logo-empe{
+    padding-left: 20px;
     height: 60px;
 }
 button{
@@ -216,10 +219,10 @@ footer{
     height: 25px;
 }
 .rodape{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .links-rodape{
     display: flex;
@@ -256,7 +259,12 @@ li a{
     height:280px;
     width: 300px;
 }
-.direitos, .direitos h3{
+.direitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direitos h3{
     width: 375px;
     margin: auto;
 }
@@ -277,7 +285,7 @@ li a{
     padding-left:  20px;
 }
 @media screen and (max-width:700px) {
-    .hr, .heading  select{
+    .hr .input-header, .heading  select{
         display: none;
     }
     .heading h2{
@@ -306,26 +314,48 @@ li a{
     div.flex > div.img-header {
         padding-left: 0px;
     }
-    .img-header img:last-child, .img-header img:first-child{
+    .img-header img:first-child{
         padding: 0;
     }
     .direitos{
         width: fit-content;
-    }
-    .logo-saef h3{
-        max-width: 118px;
+        margin: auto;
     }
     .direitos h3{
         max-width: 200px;
     }
 }
+@media screen and (max-width:399px){
+    header div.flex .img-header img{
+        padding-left: 0;
+    }
+    .direitos h3{
+        max-width: 200px;
+    }
+    .heading h2{
+        padding-left: 0;
+    }
+}
 @media screen and (max-width:699px){
     .links-rodape{
-        flex-direction: column;
         margin: auto;
     }
     .icons{
         justify-content: flex-start;
         flex-wrap: wrap;
     }
+    .img-header img:last-child{
+        padding-left: 0;
+    }
+}
+@media screen and (min-width:700px){
+    .direitos h3{
+        max-width: 374px;
+    }
+    .rodape{
+        padding-left: 50px;
+    }
+    /* .img-header img:last-child{
+        padding-left: 0;
+    } */
 }
