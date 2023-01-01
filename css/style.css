@@ -307,7 +307,6 @@ li a{
 /* pagina de apresentação */
 .secoes{
     display: flex;
-    column-gap: 5%;
     align-items: center;
     padding-left: 60px;
     flex-wrap: wrap;
@@ -327,11 +326,11 @@ li a{
     margin: auto;
 }
 h1 strong{
-    font-size: 36px;
+    font-size: 54px;
     width: 500px;
 }
 section h2{
-    font-size: 16px;
+    font-size: 20px;
     color: #818181;
 }
 /* fim da pagina de apresentação */
@@ -377,7 +376,7 @@ section h2{
         width: 350px;
     }
     .secoes{
-        padding: 20px;
+        padding: 20px 0 20px 64px;
     }
     .direitos h3{
         max-width: 200px;
@@ -412,6 +411,7 @@ section h2{
 @media screen and (max-width:1024px){
     .secoes{
         padding-left: 60px;
+        padding-right: 0;
     }
 }
 @media screen and (max-width:699px){
@@ -428,7 +428,7 @@ section h2{
     .secoes{
         flex-wrap: wrap;
         justify-content: center;
-        padding-left: 50px;
+        padding-left: 20px;
     }
 
 }
@@ -440,4 +440,10 @@ section h2{
         padding-left: 64px;
     }
     
+}
+@media screen and (min-width:1440px){
+    #img-size{
+        width: 529px;
+        height: 529px;
+    }
 }
