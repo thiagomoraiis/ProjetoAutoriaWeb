@@ -219,7 +219,16 @@ div.img-header img:first-child{
     grid-template-rows: 75% 25%;
     height: 100%;
 }
+.input-header .profile{
+    width: 22px;
+    height:22px;
+    padding-left: 12px;
+}
+button[type="submit"] b img{
+    padding-left: 0;
+}
 footer{
+    width: 100%;
     background-color: #F5F5F5;
 }
 .size-icons{
@@ -292,8 +301,42 @@ li a{
     font-size: large;
     padding-left:  20px;
 }
+.redes-sociais .icons{
+    padding: 0;
+}
+/* pagina de apresentação */
+.secoes{
+    display: flex;
+    column-gap: 5%;
+    align-items: center;
+    padding-left: 60px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.filhos:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    row-gap: 20px;
+}
+#img-size{
+    width:500px;
+    height: 370px;
+}
+.section-saef{
+    margin: auto;
+}
+h1 strong{
+    font-size: 36px;
+    width: 500px;
+}
+section h2{
+    font-size: 16px;
+    color: #818181;
+}
+/* fim da pagina de apresentação */
 @media screen and (max-width:700px) {
-    .hr .input-header, .heading  select{
+    .hr .input-header, .heading  select, label{
         display: none;
     }
     .heading h2{
@@ -329,6 +372,13 @@ li a{
         width: fit-content;
         margin: auto;
     }
+    #img-size{
+        padding-left:0;
+        width: 350px;
+    }
+    .secoes{
+        padding: 20px;
+    }
     .direitos h3{
         max-width: 200px;
     }
@@ -337,11 +387,31 @@ li a{
     header div.flex .img-header img{
         padding-left: 0;
     }
+    .secoes{
+        padding: 20px;
+    }
     .direitos h3{
         max-width: 200px;
     }
     .heading h2{
         padding-left: 0;
+    }
+    .img-header #img-size, img{
+        padding-left: 0;
+        padding: 20px;
+    }
+    #img-size{
+        width: 200px;
+        height: 200px;
+        padding:10px;
+    }
+    .secoes{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:1024px){
+    .secoes{
+        padding-left: 60px;
     }
 }
 @media screen and (max-width:699px){
@@ -355,6 +425,12 @@ li a{
     .img-header img:last-child{
         padding-left: 0;
     }
+    .secoes{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
 }
 @media screen and (min-width:700px){
     .direitos h3{
@@ -363,4 +439,5 @@ li a{
     .rodape{
         padding-left: 64px;
     }
+    
 }
