@@ -176,7 +176,7 @@ hr{
     align-items: center;
 }
 .heading h2{
-    font-size:x-large;
+    font-size:24px;
 }
 .heading select{
     height: 22px;
@@ -234,8 +234,8 @@ footer{
     background-color: #F5F5F5;
 }
 .size-icons{
-    width: 25px;
-    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
 }
 .rodape{
     padding: 32px 0;
@@ -327,7 +327,7 @@ li a{
 }
 .text-lorem p{
     font-size: x-small;
-    width: 330px;
+    max-width: 330px;
     padding: 0 0 16px 0;
 }
 .disciplina-1:last-child{
@@ -361,7 +361,7 @@ li a{
 .filhos:first-child{
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
     row-gap: 20px;
 }
 #img-size{
@@ -371,9 +371,9 @@ li a{
 .section-saef{
     margin: auto;
 }
-h1 strong{
-    font-size: 60px;
-    width: 500px;
+strong h1{
+    font-size: 48px;
+    max-width: 500px;
 }
 section h2{
     font-size: 20px;
@@ -407,7 +407,7 @@ section h2{
     }
     
 }
-@media screen and (min-width:400px){
+@media screen and (min-width:400px) and (max-width:700px){
     div.flex > div.img-header {
         padding-left: 0px;
     }
@@ -424,6 +424,7 @@ section h2{
     }
     .secoes{
         padding: 36px 0 36px 0;
+        flex-direction: column-reverse;
     }
     .direitos h3{
         max-width: 200px;
@@ -453,9 +454,7 @@ section h2{
         padding: 20px;
     }
     #img-size{
-        width: 200px;
-        height: 200px;
-        padding:10px;
+        display: none;
     }
     .secoes{
         padding: 20px;
@@ -493,10 +492,4 @@ section h2{
         padding-left: 64px;
     }
     
-}
-@media screen and (min-width:1440px){
-    #img-size{
-        width: 529px;
-        height: 529px;
-    }
 }
