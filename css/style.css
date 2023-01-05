@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    color: #2190FF;
+    color: #077ef6;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -75,7 +75,7 @@ a{
     border-radius: 3px;
     width: 26px;
     padding: 8px 12px;
-    background-color: #2190FF;
+    background-color: #077ef6;
     color: #f1f1f1;
 }
 input[type="search"]{
@@ -203,7 +203,7 @@ div.img-header img:first-child{
     display: none;
 }
 .disciplina-1:first-child{
-    background-color: #2190FF;
+    background-color: #077ef6;
     border-radius: 8px 8px 0 0;
 }
 .disciplina-1:last-child{
@@ -231,7 +231,7 @@ button[type="submit"] b img{
 }
 footer{
     width: 100%;
-    background-color: #F5F5F5;
+    background-color: #f3f5fa;
 }
 .size-icons{
     max-width: 25px;
@@ -263,7 +263,7 @@ ul{
     list-style-type: none;
 }
 li a{
-    color: #2190FF;
+    color: #077ef6;
     text-decoration: none;
 }
 .logo-saef{
@@ -295,25 +295,24 @@ li a{
     font-size: medium;
 }
 .section-saef{
-    background-color: #F9F9F9;
+    background-color: #f3f5fa;
 }
 .grid{
-    /* margin: 60px 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 46px;
+    padding: 49px;
     row-gap: 16px;
 }
 .title{
-    color: #2190FF;
+    color: #077ef6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .title h2{
     font-size: x-large;
-    color: #2190FF;
+    color: #077ef6;
 }
 .text-lorem{
     color: #566E7A;
@@ -336,13 +335,6 @@ li a{
     align-items: center;
     justify-content:left;
 }
-/* 
-.space{
-    padding: 0;
-    height: 70%;
-    width: 4px;
-    background-color: #818181;
-} */
 .disciplina-1:last-child h3{
     font-size: large;
     padding-left:  20px;
@@ -354,7 +346,7 @@ li a{
 .secoes{
     display: flex;
     align-items: center;
-    padding-left: 60px;
+    padding: 48px 0 48px 56px;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -371,10 +363,86 @@ li a{
 .section-saef{
     margin: auto;
 }
-strong h1{
+.filhos strong h1{
     font-size: 48px;
     max-width: 500px;
 }
+
+section.title-members h1{
+    color: #f1f1f1;
+}
+.section-members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #077ef6;
+    width: 100%;
+}
+.content{
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 890px;
+    flex-direction: column
+}
+.imagem{
+    height: 100%;
+}
+.title-members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-members h1{
+    font-size: 24px;
+    color: #f1f1f1;
+}
+.participantes{
+    gap: 38px;
+    margin: 24px 0 24px 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.member-name{
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.members{
+    row-gap: 4px;
+    height: 136px;
+    max-width: 386px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.member-name h2{
+    max-width: 170px;
+    font-size: 18px;
+    color: #077ef6;
+}
+.profile-member{
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+}
+.profile-member .foto img, div.foto{
+    padding: 0;
+}
+.profile-member .desc p{
+    color: #566E7A;
+}
+.foto img.imagem{
+    width: 72px;
+    height: 72px;
+}
+
 section h2{
     font-size: 20px;
     color: #818181;
@@ -414,6 +482,10 @@ section h2{
     .img-header img:first-child{
         padding: 0;
     }
+    .participantes{
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
     .direitos{
         width: fit-content;
         margin: auto;
@@ -446,6 +518,10 @@ section h2{
     .direitos h3{
         max-width: 200px;
     }
+    .participantes{
+        margin-left: 0;
+        padding: 10px;
+    }
     .heading h2{
         padding-left: 0;
     }
@@ -457,13 +533,12 @@ section h2{
         display: none;
     }
     .secoes{
-        padding: 20px;
+        padding: 48px 0 48px 56px;
     }
 }
 @media screen and (max-width:1024px){
-    .secoes{
-        padding-left: 60px;
-        padding-right: 0;
+    .participantes{
+        padding: 10px 0px;
     }
 }
 @media screen and (max-width:699px){
@@ -480,7 +555,7 @@ section h2{
     .secoes{
         flex-wrap: wrap;
         justify-content: center;
-        padding-left: 20px;
+        padding: 48px 0 48px 20px;
     }
 
 }
@@ -490,6 +565,12 @@ section h2{
     }
     .rodape{
         padding-left: 64px;
+    }
+    
+}
+@media screen and (min-width:1025px) and (max-width:1440px){
+    .secoes{
+        padding: 66px 0 66px 56px;
     }
     
 }
