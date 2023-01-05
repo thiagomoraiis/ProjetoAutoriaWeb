@@ -6,7 +6,7 @@
 body{
     color: #077ef6;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 .links-rodape ul{
@@ -424,7 +424,7 @@ section.title-members h1{
 }
 .member-name h2{
     max-width: 170px;
-    font-size: 18px;
+    font-size: 16px;
     color: #077ef6;
 }
 .profile-member{
