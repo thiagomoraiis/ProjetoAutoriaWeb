@@ -4,10 +4,13 @@
     padding: 0;
 }
 body{
-    color: #077ef6;
+    color: #566E7A;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
+}
+h1,h2,h3{
+    color: #077ef6;
 }
 .links-rodape ul{
     width:60px;
@@ -447,6 +450,71 @@ section h2{
     font-size: 20px;
     color: #818181;
 }
+.section-objetivos{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    background-color: #f3f5fa;
+}
+.div-objetivos{
+    margin: 2em 0 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 499px;
+    row-gap: 1em;
+}
+.div-objetivos h2{
+    font-size: 24px;
+    color: #077ef6;
+}
+.apresentacao-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-apresentacao{
+    margin: 36px 0 36px 0;
+    width: 901px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    column-gap: 250px;
+    justify-content: center;
+}
+.apresentacao-child:first-child > img.tamanho-imagem{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.apresentacao-child:last-child, .apresentacao-child:first-child{
+    display: flex;
+    align-items: center;
+    max-width: 345px;
+    max-height: 3450px;
+    padding: 0;
+}
+.seila{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.4em;
+}
+.apresentacao-child:first-child{
+    max-width: 350px;
+    max-height: 350px;
+}
+.seila h2{
+    color: #077ef6;
+    font-size: 3.2em;
+}
+.seila p{
+    font-size: 1.2em;
+}
 /* fim da pagina de apresentação */
 @media screen and (max-width:700px) {
     .hr .input-header, .heading  select, label{
@@ -506,6 +574,7 @@ section h2{
     header div.flex .img-header img{
         padding-left: 0;
     }
+
     .icons ul{
         column-gap: 0;
     }
@@ -529,11 +598,17 @@ section h2{
         padding-left: 0;
         padding: 20px;
     }
+    .apresentacao-child:first-child > img.tamanho-imagem{
+        display: none;
+    }
     #img-size{
         display: none;
     }
     .secoes{
         padding: 48px 0 48px 56px;
+    }
+    .members{
+        overflow: auto;
     }
 }
 @media screen and (max-width:1024px){
