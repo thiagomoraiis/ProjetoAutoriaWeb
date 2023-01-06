@@ -4,10 +4,10 @@
     padding: 0;
 }
 body{
+    margin: 0;
     color: #566E7A;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
 }
 h1,h2,h3{
     color: #077ef6;
@@ -26,11 +26,12 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div{
+nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc){
     padding: 10px 15px 10px 15px;
 }
 main{
     min-height: calc(100vh - 164.16px);
+    min-width: calc(100vw - 50px);
 }
 nav{
     height: 100%;
@@ -39,7 +40,7 @@ nav{
     width: 50px;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img){
+div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem){
     height: 50px;
     width: 72px;
     margin: auto;
@@ -173,6 +174,31 @@ hr{
     padding-left: 90px;
 }
 
+section.sobre-nos{
+    min-width: calc(100vw - 50px);
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.6em;
+    width: 100%;
+    margin: 3em 0 3em 0;
+}
+.text-lorem{
+    width:70%;
+    color: #566E7A;
+    display: flex;
+    column-gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+.text-lorem p{
+    font-size: 1em;
+    width: 40%;
+    padding: 0 0 16px 0;
+}
+
 .heading{
     justify-content: space-between;
     display: flex;
@@ -233,7 +259,7 @@ button[type="submit"] b img{
     padding-left: 0;
 }
 footer{
-    width: 100%;
+    min-width: calc(100vw - 50px);
     background-color: #f3f5fa;
 }
 .size-icons{
@@ -241,7 +267,7 @@ footer{
     max-height: 25px;
 }
 .rodape{
-    padding: 32px 0;
+    width: 95%;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -288,25 +314,22 @@ li a{
     align-items: center;
 }
 .direitos h3{
-    width: 375px;
+    width: 45%;
     margin: auto;
-}
-.direitos h3{
-    font-size: medium;
+    font-size: 1.6em;
 }
 .logo-saef h3{
     font-size: medium;
 }
+img.tamanho-imagem{
+    padding-left: 0;
+}
 .section-saef{
+    width: 100%;
+    margin: auto;
     background-color: #f3f5fa;
 }
-.grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 49px;
-    row-gap: 16px;
-}
+
 .title{
     color: #077ef6;
     display: flex;
@@ -316,21 +339,6 @@ li a{
 .title h2{
     font-size: x-large;
     color: #077ef6;
-}
-.text-lorem{
-    color: #566E7A;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 15px;
-    max-width: 730px;
-    align-items: center;
-    justify-content: center;
-    column-gap: 22px;
-}
-.text-lorem p{
-    font-size: x-small;
-    max-width: 330px;
-    padding: 0 0 16px 0;
 }
 .disciplina-1:last-child{
     padding: 0;
@@ -349,22 +357,21 @@ li a{
 .secoes{
     display: flex;
     align-items: center;
-    padding: 48px 0 48px 56px;
+    margin: 4em 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+section.filhos{
+    width: 45%;
 }
 .filhos:first-child{
     display: flex;
     flex-direction: column;
-    max-width: 500px;
     row-gap: 20px;
 }
 #img-size{
-    width:500px;
-    height: 370px;
-}
-.section-saef{
-    margin: auto;
+    width: 100%;
+    height: 100%;
 }
 .filhos strong h1{
     font-size: 48px;
@@ -374,60 +381,60 @@ li a{
 section.title-members h1{
     color: #f1f1f1;
 }
-.section-members{
+section.section-members{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #077ef6;
-    width: 100%;
+    min-width: calc(100vw - 50px);
 }
 .content{
-    margin: 24px 0;
+    margin: 2.4em 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 890px;
+    width: 85%;
     flex-direction: column
 }
 .imagem{
     height: 100%;
 }
 .title-members{
+    width: 23%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .title-members h1{
-    font-size: 24px;
+    font-size: 3em;
     color: #f1f1f1;
 }
 .participantes{
-    gap: 38px;
-    margin: 24px 0 24px 50px;
+    gap: 3.8em;
+    /* margin: 24px 0 24px 50px; */
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .member-name{
+    width: 100%;
     padding-bottom: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .members{
-    row-gap: 4px;
-    height: 136px;
-    max-width: 386px;
+    width: 47%;
+    height: 30%;
     background-color: white;
     border-radius: 2px;
     display: flex;
     flex-direction: column;
 }
 .member-name h2{
-    max-width: 170px;
-    font-size: 16px;
+    font-size: 1.6em;
     color: #077ef6;
 }
 .profile-member{
@@ -453,7 +460,7 @@ section h2{
 .section-objetivos{
     display: flex;
     justify-content: center;
-    width:100%;
+    min-width: calc(100vw - 50px);
     background-color: #f3f5fa;
 }
 .div-objetivos{
@@ -462,26 +469,25 @@ section h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 499px;
-    row-gap: 1em;
+    width: 50%;
+    row-gap: 2em;
 }
 .div-objetivos h2{
     font-size: 24px;
     color: #077ef6;
 }
 .apresentacao-1{
-    width: 100%;
+    width: calc(100vw - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .div-apresentacao{
-    margin: 36px 0 36px 0;
-    width: 901px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
-    column-gap: 250px;
+    column-gap: 20%;
     justify-content: center;
 }
 .apresentacao-child:first-child > img.tamanho-imagem{
@@ -516,136 +522,8 @@ section h2{
     font-size: 1.2em;
 }
 /* fim da pagina de apresentação */
-@media screen and (max-width:700px) {
-    .hr .input-header, .heading  select, label{
-        display: none;
+@media only screen and (max-width:1024px) {
+    div.secoes{
+        flex-direction: column;
     }
-    
-    .heading h2{
-        padding-left: 25px;
-    }
-    div.img-header img:first-child{
-        display: block;
-    }
-    div.flex > div.img-header {
-        padding-left: 0px;
-    }
-    .div-main{
-        margin: auto;
-        justify-content: center;
-        padding: 0;
-    }
-    .grid-layout{
-        justify-content: center;
-    }
-    nav{
-        display: none;
-    }
-    
-}
-@media screen and (min-width:400px) and (max-width:700px){
-    div.flex > div.img-header {
-        padding-left: 0px;
-    }
-    .img-header img:first-child{
-        padding: 0;
-    }
-    .participantes{
-        padding: 10px 0px;
-        margin-left: 0px;
-    }
-    .direitos{
-        width: fit-content;
-        margin: auto;
-    }
-    #img-size{
-        padding-left:0;
-        width: 350px;
-    }
-    .secoes{
-        padding: 36px 0 36px 0;
-        flex-direction: column-reverse;
-    }
-    .direitos h3{
-        max-width: 200px;
-    }
-}
-@media screen and (max-width:399px){
-    header div.flex .img-header img{
-        padding-left: 0;
-    }
-
-    .icons ul{
-        column-gap: 0;
-    }
-    .redes-sociais {
-        padding-right: 0;
-    }
-    .secoes{
-        padding: 20px;
-    }
-    .direitos h3{
-        max-width: 200px;
-    }
-    .participantes{
-        margin-left: 0;
-        padding: 10px;
-    }
-    .heading h2{
-        padding-left: 0;
-    }
-    .img-header #img-size, img{
-        padding-left: 0;
-        padding: 20px;
-    }
-    .apresentacao-child:first-child > img.tamanho-imagem{
-        display: none;
-    }
-    #img-size{
-        display: none;
-    }
-    .secoes{
-        padding: 48px 0 48px 56px;
-    }
-    .members{
-        overflow: auto;
-    }
-}
-@media screen and (max-width:1024px){
-    .participantes{
-        padding: 10px 0px;
-    }
-}
-@media screen and (max-width:699px){
-    .links-rodape{
-        margin: auto;
-    }
-    .icons{
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-    .img-header img:last-child{
-        padding-left: 0;
-    }
-    .secoes{
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 48px 0 48px 20px;
-    }
-
-}
-@media screen and (min-width:700px){
-    .direitos h3{
-        max-width: 374px;
-    }
-    .rodape{
-        padding-left: 64px;
-    }
-    
-}
-@media screen and (min-width:1025px) and (max-width:1440px){
-    .secoes{
-        padding: 66px 0 66px 56px;
-    }
-    
 }
