@@ -26,7 +26,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc){
+nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse){
     padding: 10px 15px 10px 15px;
 }
 main{
@@ -40,7 +40,7 @@ nav{
     width: 50px;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem){
+div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem){
     height: 50px;
     width: 72px;
     margin: auto;
@@ -309,12 +309,14 @@ li a{
     width: 300px;
 }
 .direitos{
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .direitos h3{
-    width: 45%;
+    width: 43%;
+    text-align: center;
     margin: auto;
     font-size: 1.6em;
 }
@@ -357,7 +359,7 @@ img.tamanho-imagem{
 .secoes{
     display: flex;
     align-items: center;
-    margin: 4em 0;
+    padding: 4em 0 4em 4em;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -386,7 +388,7 @@ section.section-members{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #077ef6;
+    background-color: #407BFF;
     min-width: calc(100vw - 50px);
 }
 .content{
@@ -412,18 +414,16 @@ section.section-members{
 }
 .participantes{
     gap: 3.8em;
-    /* margin: 24px 0 24px 50px; */
+    margin: 2.4em 0 2.4em 0;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .member-name{
-    width: 100%;
-    padding-bottom: 0px;
+    width: auto;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 .members{
     width: 47%;
@@ -482,13 +482,18 @@ section h2{
     justify-content: center;
     align-items: center;
 }
-.div-apresentacao{
-    width: 90%;
+.div-apresentacao, .div-apresentacao-reverse{
+    width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
+    margin: 4em 0 4em 4em;
     column-gap: 20%;
     justify-content: center;
+}
+
+.div-apresentacao-reverse{
+    flex-direction: row-reverse;
 }
 .apresentacao-child:first-child > img.tamanho-imagem{
     width: 100%;
