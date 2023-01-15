@@ -18,6 +18,53 @@ h1,h2,h3{
 .redes-sociais{
     flex-wrap: wap;
 }
+.main-form{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f5fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-input:last-child{
+    align-items: center;
+    margin-top: 3em;
+}
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-input{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 24px 0 12px 0;
+    background-color: write;
+    width: 100%;
+}
+.div-input input[type='email'], input[type='password']{
+    outline: none;
+    border: 1px solid #ccc;
+    height: 2.5em;
+    width: 100%;
+    border-radius: 0.4em;
+    height: 3.5em;
+    margin: 1em 0;
+}
+.img-input{
+    width: 100px;
+    height: 100px;
+}
+.div-input img{
+    padding: 0;
+}
+.div-input label{
+    font-size: 2em;
+}
 nav ul{
     margin-top: 55px;
     list-style: none;
@@ -26,7 +73,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child){
+nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -40,16 +87,29 @@ nav{
     width: 5em;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header){
+div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input){
     height: 5em;
     width: 7.2em;
     margin: auto;
     padding-left: 9em;
 }
+.img-input-center{
+    align-items: center;
+    margin-bottom: 4em;
+}
 #logo-empe, .list, .logo-header{
     height: 50px;
     width: 72px;
     padding-left: 8em;
+}
+.content-form{
+    display: flex;
+    border-radius: 1.5em;
+    align-items: center;
+    justify-content: center;
+    width: 26%;
+    height: 70%;
+    background-color: white;
 }
 .icons ul{
     padding-top: 8px;
@@ -151,7 +211,15 @@ input[type="search"]:focus{
     padding-left: 20px;
     height: 60px;
 }
-button{
+.botao-login{
+    width: 50%;
+    border: none;
+    padding: 8px 12px;
+    background-color: #077ef6;
+    color: white;
+    border-radius: 3px;
+}
+button:not(button.botao-login){
     width: 36;
     padding: 0 8px 0 5px;
     display: flex;
@@ -534,6 +602,10 @@ section h2{
     max-width: 350px;
     max-height: 350px;
 } */
+.contem{
+    width: 90%;
+    padding: 0;
+}
 .seila h2{
     color: #077ef6;
     font-size: 3.2em;
@@ -545,6 +617,10 @@ section h2{
 @media only screen and (min-width:1440px){
     .div-apresentacao, .div-apresentacao-reverse{
         margin: 2em 0 2em 12em;
+    }
+    .content-form{
+        width: 30%;
+        height: 100%;
     }
 }
 @media only screen and (max-width:1440px){
@@ -563,6 +639,11 @@ section h2{
     .text-lorem p {
         font-size: 1.4em;
     }
+    .content-form{
+        width: 35%;
+        height: 70%;
+    }
+
 }
 @media only screen and (max-width:1024px) {
     div.secoes{
@@ -582,6 +663,10 @@ section h2{
     }
     .div-apresentacao-reverse, .div-apresentacao{
         margin: 4em 0 4em 6em;
+    }
+    .content-form {
+        width: 40%;
+        height: 70%;
     }
 
 }
@@ -639,6 +724,12 @@ section h2{
     .div-apresentacao-reverse, .div-apresentacao{
         margin: 4em 0 4em 0;
     }
+    .content-form {
+        width: 65%;
+        height:70%;
+        /* height: auto; */
+        background-color: white;
+    }
 }
 
 @media only screen and (max-width:425px){
@@ -662,6 +753,12 @@ section h2{
     .img-header .list, .logo-header{
         padding-left: 0;
     }
+    .content-form {
+        width: 80%;
+        height: 70%;
+        background-color: white;
+    }
+
     /* .members{
         width: 95%;
     } */
