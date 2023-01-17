@@ -17,7 +17,7 @@ h1,h2,h3{
 }
 .ul-flex{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
 }
 .ul-none{
@@ -786,8 +786,4 @@ section h2{
         height: 70%;
         background-color: white;
     }
-
-    /* .members{
-        width: 95%;
-    } */
 }

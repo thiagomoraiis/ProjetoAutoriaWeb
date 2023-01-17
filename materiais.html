@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav-m">
         <ul>
             <li><a href="materiais.html"><img src="./img/pencil-square.svg" alt=""></a></li>
             <li><a href=""><img src="./img/journal-check.svg" alt=""></a></li>
@@ -25,16 +25,17 @@
             <div class="img-header">
                 <ul class="ul-flex">
                     <li class="dis-none">
-                        <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
-                            <a href=""><img  class="list" style="display: block;" src="./img/list.svg" alt=""></a>
-                            <ul class="ul-none">
+                        <!-- <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;"> -->
+                            <a href="#" ><button onclick="handleOpenNav()" style="background-color: transparent;
+                                border: none; padding:0px" ><img  class="list" style="display: block;" src="./img/list.svg" alt="" ></button></a>
+                            <!-- <ul class="ul-none">
                                 <li><a href="materiais.html"><img src="./img/pencil-square.svg" alt="" style="width: 16px;height: 16px; padding: 1em 1.5em 1em 1.5em;"></a></li>
                                 <li><a href=""><img src="./img/journal-check.svg" alt="" style="width: 16px;height: 16px; padding: 1em 1.5em 1em 1.5em;"></a></li>
                                 <li><a href=""><img src="./img/chat.svg" alt="" style="width: 16px;height: 16px; padding: 1em 1.5em 1em 1.5em;" ></a></li>
                                 <li><a href=""><img src="./img/lightbulb.svg" alt="" style="width: 16px;height: 16px; padding: 1em 1.5em 1em 1.5em;"></a></li>
                                 <li><a href=""><img src="./img/book.svg" alt="" style="width: 16px;height: 16px; padding: 1em 1.5em 1em 1.5em;"></a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </li>
                     <li>
                         <a href="./index.html"><img  class="logo-header" src="./img/logo-saef1 (1).svg" alt=""></a>
@@ -200,5 +201,16 @@
             <h3>© Copyright SAEF. Todos os direitos reservados.</h3>
         </div>
     </footer>
+    <script>
+        function handleOpenNav() {
+            const displayValue = document.getElementById("nav-m").style.display;
+            if(displayValue == "block") {
+                document.getElementById("nav-m").style.display = "none"
+            };
+            if(displayValue === "" || displayValue === "none") {
+                document.getElementById("nav-m").style.display = "block"
+            };
+        }
+    </script>
 </body>
 </html>
