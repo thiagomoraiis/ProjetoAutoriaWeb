@@ -11,9 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav-m">
         <ul>
-            <li><a href="./materiais.html"><img src="./img/pencil-square.svg" alt=""></a></li>
+            <li><a href="materiais.html"><img src="./img/pencil-square.svg" alt=""></a></li>
             <li><a href=""><img src="./img/journal-check.svg" alt=""></a></li>
             <li><a href=""><img src="./img/chat.svg" alt=""></a></li>
             <li><a href=""><img src="./img/lightbulb.svg" alt=""></a></li>
@@ -23,8 +23,15 @@
     <header>
         <div class="flex">
             <div class="img-header">
-                <img  class="list" src="./img/list.svg" alt="">
-                <a href="./index.html"><img  class="logo-header" src="./img/logo-saef1 (1).svg" alt=""></a>
+                <ul class="ul-flex">
+                    <li class="dis-none">
+                            <a href="#" ><button onclick="handleOpenNav()" style="background-color: transparent;
+                                border: none; padding:0px" ><img  class="list" style="display: block;" src="./img/list.svg" alt="" ></button></a>
+                    </li>
+                    <li>
+                        <a href="./index.html"><img  class="logo-header" src="./img/logo-saef1 (1).svg" alt=""></a>
+                    </li>
+                </ul>
             </div>
             <div class="hr">
                 <a href="./form.html">Login</a>
@@ -275,5 +282,17 @@
             <h3>© Copyright SAEF. Todos os direitos reservados.</h3>
         </div>
     </footer>
+    <script>
+        function handleOpenNav() {
+            const displayValue = document.getElementById("nav-m").style.display;
+            if(displayValue == "block") {
+                document.getElementById("nav-m").style.display = "none"
+            };
+            if(displayValue === "" || displayValue === "none") {
+                document.getElementById("nav-m").style.display = "block"
+                document.getElementsByTagName(nav).style.width = "7.9em"
+            };
+        }
+    </script>
 </body>
 </html>
