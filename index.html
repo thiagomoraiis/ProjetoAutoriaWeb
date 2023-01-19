@@ -285,10 +285,11 @@
     <script>
         function handleOpenNav() {
             const displayValue = document.getElementById("nav-m").style.display;
+            const sizeNav = docimnet.getElementsByTagName(nav).style.width;
             if(displayValue == "block") {
                 document.getElementById("nav-m").style.display = "none"
             };
-            if(displayValue === "" || displayValue === "none") {
+            if(displayValue === "" || displayValue === "none" || sizeNav == "5em") {
                 document.getElementById("nav-m").style.display = "block"
                 document.getElementsByTagName(nav).style.width = "7.9em"
             };
