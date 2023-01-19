@@ -697,6 +697,10 @@ section h2{
     .link a{
         font-size: 2em;
     }
+    nav {
+        display: block;
+        position: fixed;
+    }
 
 }
 @media only screen and (max-width:768px){
@@ -705,6 +709,9 @@ section h2{
     }
     nav{
         display: none;
+        position: absolute;
+        top: 11.1%;
+        transition: width 1s ease-in;
     }
     .content {
         width: 90%;
