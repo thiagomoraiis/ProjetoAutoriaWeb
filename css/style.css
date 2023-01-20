@@ -91,7 +91,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg){
+nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -105,7 +105,7 @@ nav{
     width: 6em;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input){
+div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input, div.user img){
     height: 5em;
     width: 7.2em;
     margin: auto;
@@ -623,14 +623,50 @@ section h2{
     flex-direction: column;
     row-gap: 1.4em;
 }
-/* .apresentacao-child:first-child{
-    max-width: 350px;
-    max-height: 350px;
-} */
 .contem{
     width: 90%;
-    padding: 0;
-    
+    padding: 0;   
+}
+
+section.all-section{
+    width: 80%;
+}
+section.perguntas{
+    margin: 2em 0 1em 0;
+}
+div.user{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 16%;
+     column-gap: 10px;
+}
+div.user img{
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding-left: 0;
+    }
+div.conteudo-perguntas{
+    border-radius: 10px; border: 1px solid #f1f1f1;
+}
+
+div.perg p{
+    padding: 0 13px 0 13px; 
+    font-size: 1.4em
+}
+
+div.resp{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+div.button-enviar button{
+    width: 12em;
+    padding: 0em 4em;
+    border-radius: 10px;
+    color: white;
+    background-color: #077ef6;
 }
 .seila h2{
     color: #077ef6;
