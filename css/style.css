@@ -83,8 +83,12 @@ form{
 .div-input label{
     font-size: 1.6em;
 }
+nav img{
+    width: 18px;
+    height: 18px;
+}
 nav ul{
-    margin-top: 55px;
+    margin-top: 90px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -630,6 +634,10 @@ section h2{
 
 section.all-section{
     width: 80%;
+    margin: 1em 0em 6em 0em;
+}
+section > h1{
+    font-size: 2.6em;
 }
 section.perguntas{
     margin: 2em 0 1em 0;
@@ -638,8 +646,8 @@ div.user{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 16%;
-     column-gap: 10px;
+    width: 135px;
+    column-gap: 10px;
 }
 div.user img{
     width: 24px;
@@ -648,7 +656,7 @@ div.user img{
     padding-left: 0;
     }
 div.conteudo-perguntas{
-    border-radius: 10px; border: 1px solid #f1f1f1;
+    border-radius: 10px; border: 2px solid #f1f1f1;
 }
 
 div.perg p{
@@ -661,10 +669,11 @@ div.resp{
     justify-content: space-between;
     align-items: center;
 }
-div.button-enviar button{
+div.button-enviar a{
     width: 12em;
-    padding: 0em 4em;
-    border-radius: 10px;
+    font-size: 1em;
+    padding: 0.2em 3em;
+    border-radius: 30px;
     color: white;
     background-color: #077ef6;
 }
@@ -746,7 +755,8 @@ div.button-enviar button{
     nav{
         display: none;
         position: absolute;
-        top: 11.1%;
+        top: 18.8%;
+
     }
     .content {
         width: 90%;
@@ -758,6 +768,9 @@ div.button-enviar button{
     }
     .ul-none{
         display: none;
+    }
+    nav ul{
+        margin-top: 55px;
     }
     .ul-none:focus, .list:focus, .dis-none:focus, .dis-none:focus > div:focus, .dis-none > div > img.list:focus, .dis-none div > a{
         display: block;
@@ -837,6 +850,14 @@ div.button-enviar button{
     }
     .logo-saef {
         padding: 2em 0 2em 0;
+    }
+    div.resp{
+        flex-direction:column-reverse;
+        align-items: flex-start;
+    }
+    div.button-enviar{
+        margin:auto;
+        padding-bottom: 1em;
     }
     .members{
         width: 90%;
