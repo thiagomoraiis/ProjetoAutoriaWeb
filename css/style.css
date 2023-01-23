@@ -95,7 +95,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao){
+nav ul li,div:not(#divmeet,#divmeet2,.reunião,#ldasemana,#btslivros,.BTlivros,.divlivros,.texto_do_livro,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -109,7 +109,7 @@ nav{
     width: 6em;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input, div.user img){
+div img:not(#meet,#estante,.livros,.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input, div.user img){
     height: 5em;
     width: 7.2em;
     margin: auto;
@@ -684,6 +684,102 @@ div.button-enviar a{
 .seila p{
     font-size: 1.2em;
 }
+
+/* Adiconado por JV */
+.orgdoCL{
+    display: flex;
+}
+.pCL{  
+    margin-bottom: 2em;
+    font-size: large;
+}
+.texto_do_livro{
+    width: 60%;
+    padding-left: 9em;
+}
+#tituloCL{
+    padding-left: 4.2em;
+    padding-bottom: 1em;
+    font-size:x-large;
+}
+.divlivros{
+    width: 15%;
+    margin-left: 1em;
+}
+.titulolivros,.titulolivros2{
+    color: #4d4d4d;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 0.4em;
+}
+.titulolivros2{
+    padding-top: 0.4em;
+    font-size:medium;   
+}
+.livros{
+    height: 20em;
+    width: 15em;
+    padding-left: 1em;
+    padding-bottom: 0.3em;
+    background-color: rgb(124, 71, 22);
+    border-radius: 0.5em;  
+    margin-left: 15%;
+}
+.divlivros#ldasemana,#lanterior,#loutros{
+    padding: 0;
+}
+#btslivros{
+    display: flex;
+    justify-content: space-between;
+}
+.lamargin{
+    margin-bottom: 5em;
+}
+.BTlivros{
+    text-align: center;
+    color: #ffff;
+    background-color: #5081FF;
+    border-radius: 1.5em;
+    font-size:small;
+    padding: 0.5em;
+    padding-top: 0.3em;
+}
+#estante{
+    height: 18em;
+    width: 20em;
+    border-radius: 2em;
+    background-color: #bee3f8;
+    padding: 1em;
+}
+.reunião{
+    display:flex;
+    border-style:solid ;
+    border-width: 0.2em;
+    border-radius: 1em;
+    border-bottom-right-radius: 0 ;
+    border-top-right-radius: 0;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+#reuniaosla{
+    color: #4d4d4d;
+}
+#meet{
+    height: 3em;
+    width: 3.5em;
+}
+#divmeet{    
+    border-right: #818181;
+    border-right-style: solid;
+    border-width: 0.05em;
+}
+#divmeet,#divmeet2{
+    padding: 0.2em;
+}
+/* até aqui */
+
+
+
 /* fim da pagina de apresentação */
 @media only screen and (min-width:1440px){
     .div-apresentacao, .div-apresentacao-reverse{
