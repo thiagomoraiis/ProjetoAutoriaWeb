@@ -35,6 +35,9 @@ h1,h2,h3{
 .redes-sociais{
     flex-wrap: wap;
 }
+main{
+    margin-top: 16px;
+}
 .main-form{
     width: 100vw;
     height: 100vh;
@@ -95,7 +98,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao){
+nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -109,7 +112,7 @@ nav{
     width: 6em;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input, div.user img){
+div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input, div.user img, div.img-user-name > img, .name-user, .user-photo > img){
     height: 5em;
     width: 7.2em;
     margin: auto;
@@ -646,8 +649,10 @@ div.user{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 135px;
+    width: 130px;
     column-gap: 10px;
+    padding: 8px 14px 8px 14px;
+    
 }
 div.user img{
     width: 24px;
@@ -677,14 +682,69 @@ div.button-enviar a{
     color: white;
     background-color: #077ef6;
 }
+section.all-section-2, .perg-resp, .cont-pergunta{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+section.all-section-2{
+    width: 80%;
+}
+div.all-div-2, div.cont-pergunta{
+    border: 2px solid #e8e8e8; border-radius: 5px;
+}
+div.all-div-2{
+    margin-top: 20px;
+}
+div.avaliacao-2, div.input-perg{
+    padding: 1em 0 1em 0;
+}
+div.img-user-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0em 1.2em 1em 0em; */
+    flex-direction: row;
+    
+}
 .seila h2{
     color: #077ef6;
     font-size: 3.2em;
+}
+.input-perg input{
+    outline: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 4px 4px 4px 6px;
+}
+.input-perg,.input-perg input{
+    width: 100%;
+    box-sizing: border-box;
 }
 .seila p{
     font-size: 1.2em;
 }
 /* fim da pagina de apresentação */
+
+.user-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-photo > img{
+    padding: 0;
+    width: 2em;
+    height: 2em;
+}
+.user-photo h2{
+    font-size: 1.6em;
+}
+.user-photo{
+    padding: 0.7em 0em;
+}
+
 @media only screen and (min-width:1440px){
     .div-apresentacao, .div-apresentacao-reverse{
         margin: 3em 10em 3em 10em;
