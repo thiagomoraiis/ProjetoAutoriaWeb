@@ -7,7 +7,7 @@ body{
     color: #566E7A;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 16px;
 }
 h1,h2,h3{
     color: #077ef6;
@@ -35,7 +35,7 @@ h1,h2,h3{
 .redes-sociais{
     flex-wrap: wap;
 }
-main{
+main:not(.pagina-apresentação){
     margin-top: 16px;
 }
 .main-form{
@@ -87,8 +87,8 @@ form{
     font-size: 1.6em;
 }
 nav img{
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
 }
 nav ul{
     margin-top: 90px;
@@ -169,7 +169,8 @@ a{
 .flex .hr a{
     border-radius: 3px;
     width: 26px;
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
+    padding: 6px 27px 6px 12px;
     background-color: #077ef6;
     color: #f1f1f1;
 }
@@ -372,12 +373,13 @@ footer{
     max-height: 25px;
 }
 .rodape{
-    min-width: calc(100% - 50px);
+    min-width: calc(100% - 6em);
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1em 0;
+    margin-left: 6em;
 }
 .links-rodape{
     display: flex;
@@ -611,9 +613,14 @@ section h2{
 .apresentacao-child:last-child, .apresentacao-child:first-child{
     display: flex;
     align-items: center;
-    width: 38%;
+    width: 52%;
     height: auto;
     padding: 0;
+    /* display: flex;
+    align-items: center;
+    width: 38%;
+    height: auto;
+    padding: 0; */
 }
 .apresentacao-child:first-child{
     display: flex;
@@ -638,6 +645,7 @@ section h2{
 section.all-section{
     width: 80%;
     margin: 1em 0em 6em 0em;
+    padding-left: 5em;
 }
 section > h1{
     font-size: 2.6em;
@@ -729,6 +737,8 @@ div.img-user-name{
 /* Adiconado por JV */
 .orgdoCL{
     display: flex;
+    margin-left: 6em;
+    max-width: 80em;
 }
 .pCL{  
     margin-bottom: 2em;
@@ -874,6 +884,10 @@ td, th{
         width: 30%;
         height: auto;
     }
+    nav img {
+        width: 26px;
+        height: 26px;
+    }
 }
 @media only screen and (max-width:1440px){
     .profile-member .desc p {
@@ -894,6 +908,17 @@ td, th{
     .content-form{
         width: 35%;
         height: auto;
+    }
+    .rodape{
+        min-width: calc(100% - 6em);
+        margin-left: 6em;
+    }
+    .orgdoCL{
+        /* max-width: 80em; */
+        /* flex-wrap: wrap; */
+        /* display: contents; */
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -927,6 +952,11 @@ td, th{
         display: block;
         position: fixed;
     }
+    
+    /* .rodape{
+        min-width: calc(100% - 6em);
+        margin-left: 0;
+    } */
 
 
 }
@@ -937,7 +967,7 @@ td, th{
     nav{
         display: none;
         position: absolute;
-        top: 18.8%;
+        top: 10%;
 
     }
     .content {
@@ -1031,6 +1061,9 @@ td, th{
         width: 85%;
         margin: auto;
         
+    }
+    section.all-section{
+        padding: 0;
     }
 
 
