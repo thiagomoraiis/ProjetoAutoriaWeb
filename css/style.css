@@ -50,7 +50,7 @@ main:not(.pagina-apresentação){
     align-items: center;
     margin-top: 3em;
 }
-form{
+form:not(#form-cronograma){
     height: auto;
     width: 100%;
     display: flex;
@@ -98,7 +98,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma){
+nav ul li,div:not(.div-cronograma,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -827,8 +827,20 @@ div.img-user-name{
 #divmeet,#divmeet2{
     padding: 0.2em;
 }
+.org-cronograma{
+ width: 100%;
+ margin-left: 3em;
+ display: flex;
+}
+.div-cronograma{
 
-
+} 
+.div-lateral{
+width: 30%;
+}
+#form-cronograma{
+    width: 70%;
+}
 /* até aqui */
 
 
