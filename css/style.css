@@ -9,7 +9,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
-h1,h2,h3{
+h1,h2,h3:not(#titulo-checkbox){
     color: #077ef6;
 }
 .links-rodape ul{
@@ -98,7 +98,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(.div-cronograma,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma){
+nav ul li,div:not(.div-checkbox,.matérias-check,.div-cronograma,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -828,18 +828,49 @@ div.img-user-name{
     padding: 0.2em;
 }
 .org-cronograma{
- width: 100%;
- margin-left: 3em;
- display: flex;
+    width: 100%;
+    margin-left: 5em;
+    display: flex;
+    justify-content: space-between;
 }
-.div-cronograma{
-
+.div-checkbox{
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 0.15em;
+    border-color: #A6A0A0;
+    padding: 1.5em 0em 1.5em 4em ;
 } 
 .div-lateral{
-width: 30%;
+    width: 15%;
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 0.15em;
+    height: 50%;
+    font-size: 0.7em;
+    margin-left: 1em;
+    color: #65C8FF;
+    border-color: #A6A0A0 ;
+    align-content: space-between;
 }
 #form-cronograma{
-    width: 70%;
+    width: 80%;
+}
+.margem-geral{
+    margin-left: 1em ;
+}
+.matérias-check,#titulo-checkbox{
+    padding: 0;
+    font-size: 1.5em;
+}
+#titulo-checkbox{
+    color:#4d4d4d;
+}
+.matérias-check{
+    color: #65C8FF;
+}
+input[type="checkbox"] {
+    width: 2em; 
+    height: 1.5em;
 }
 /* até aqui */
 
