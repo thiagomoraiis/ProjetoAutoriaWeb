@@ -98,7 +98,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(.div-cronograma,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma){
+nav ul li,div:not(.div-cronograma,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma, .zerar, .org-cronograma){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -723,7 +723,7 @@ div.img-user-name{
 }
 .input-perg input{
     outline: none;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #ccc;
     border-radius: 10px;
     padding: 4px 4px 4px 6px;
 }
@@ -829,18 +829,29 @@ div.img-user-name{
     padding: 0.2em;
 }
 .org-cronograma{
- width: 100%;
- margin-left: 3em;
- display: flex;
+    /* width: 100%; */
+    /* border: 2px solid #ccc;
+    border-radius: 10px; */
+    margin-left: 6em;
+    display: flex;
 }
-.div-cronograma{
-
+#bt-gerar{
+    padding: 1em;
+    color: white;
+    background: #077ef6;
+    border: none;
+    border-radius: 1.2em;
 } 
+th, td{
+    border: 1px solid #ccc;
+}
 .div-lateral{
 width: 30%;
 }
 #form-cronograma{
     width: 70%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
 }
 /* até aqui */
 
@@ -929,9 +940,6 @@ td, th{
         margin-left: 6em;
     }
     .orgdoCL{
-        /* max-width: 80em; */
-        /* flex-wrap: wrap; */
-        /* display: contents; */
         display: flex;
         flex-direction: column;
     }
@@ -941,6 +949,9 @@ td, th{
     div.secoes{
         flex-direction: column;
         padding: 4em 4em 4em 3em;
+    }
+    .div-lateral{
+        display: none;
     }
     .logo-saef{
         padding: 2em 0 2em 6em;
@@ -991,6 +1002,13 @@ td, th{
         top: 10%;
 
     }
+    #form-cronograma{
+        width: 88%;
+    }
+    .org-cronograma{
+        justify-content: center;
+        margin:0;
+    }
     .content {
         width: 90%;
         margin: 2.4em 1em;
@@ -1037,6 +1055,9 @@ td, th{
     }
     .heading {
         justify-content: space-around;
+    }
+    .titulopg{
+        padding-left: 1.2em;
     }
     .rodape{
         justify-content: center;
@@ -1100,6 +1121,9 @@ td, th{
     }
     .apresentacao-child:last-child, .apresentacao-child:first-child {
         width: 90%;
+    }
+    #titulopg{
+        padding-left: 0;
     }
     .logo-saef {
         padding: 2em 0 2em 0;
