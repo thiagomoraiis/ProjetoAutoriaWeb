@@ -39,7 +39,7 @@ main:not(.pagina-apresentação){
     margin-top: 16px;
 }
 .main-form{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background-color: #f3f5fa;
     display: flex;
@@ -430,6 +430,7 @@ li a{
 }
 .logo-saef h3{
     font-size: 1.6em;
+    text-align: center;
 }
 img.tamanho-imagem{
     padding-left: 0;
@@ -501,7 +502,7 @@ section.section-members{
     min-width: calc(100vw - 50px);
 }
 .content{
-    margin: 2.4em 0;
+    margin: 2.4em 0em 2.4em 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -966,6 +967,12 @@ td, th{
         display: block;
         position: fixed;
     }
+    .seila p {
+        font-size: 0.8em;
+    }
+    .seila h2 {
+        font-size: 2.2em;
+    }
     
     /* .rodape{
         min-width: calc(100% - 6em);
@@ -1079,6 +1086,9 @@ td, th{
     section.all-section{
         padding: 0;
     }
+    .rodape{
+        margin: 0;
+    }
 
 
 }
@@ -1117,4 +1127,11 @@ td, th{
         height: 70%;
         background-color: white;
     }
+    .seila h2 {
+        font-size: 2em;
+    }
+    .seila p {
+        font-size: 0.8em;
+    }
+    
 }
