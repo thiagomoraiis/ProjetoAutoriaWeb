@@ -719,7 +719,7 @@ div.img-user-name{
 }
 .seila h2{
     color: #077ef6;
-    font-size: 3.2em;
+    font-size: 3em;
 }
 .input-perg input{
     outline: none;
@@ -732,7 +732,7 @@ div.img-user-name{
     box-sizing: border-box;
 }
 .seila p{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* Adiconado por JV */
@@ -1062,7 +1062,7 @@ td, th{
     nav{
         display: none;
         position: absolute;
-        top: 10%;
+        top: 12%;
 
     }
     #form-cronograma{
