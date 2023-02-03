@@ -1224,6 +1224,16 @@ td, th{
     .livros{
         padding-left: 0.5em;
     }
+    .orgdoCL {
+        margin-left: 0;
+    }
+    #titulopg {
+        /* margin-left: 5.1em; */
+        padding-bottom: 1em;
+        font-size: x-large;
+        margin-left: 0;
+    }
+    
 }
 
 @media only screen and (max-width:425px){
