@@ -974,12 +974,6 @@ td, th{
         min-width: calc(100% - 6em);
         margin-left: 6em;
     }
-    .orgdoCL{
-        /* max-width: 80em; */
-        /* flex-wrap: wrap; */
-        /* display: contents; */
-    }
-
 }
 @media only screen and (min-width:1440px) {
     .orgmeetajustada{
