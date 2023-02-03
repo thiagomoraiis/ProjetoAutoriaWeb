@@ -9,7 +9,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
-h1,h2,h3{
+h1,h2,h3:not(#titulo-checkbox){
     color: #077ef6;
 }
 .links-rodape ul{
@@ -24,7 +24,7 @@ h1,h2,h3{
     margin: 1.3em 0em 1.2em 0em;
     justify-content: flex-start;
     display: flex;
-    font-size: 1.1em;
+    font-size: small;
 }
 .link a{
     color: #148aff;
@@ -98,7 +98,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li,div:not(.div-cronograma,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma, .zerar, .org-cronograma){
+nav ul li,div:not(#divmeet,#divmeet2,.reunião,#ldasemana,#lanterior,#loutros,#btslivros,.BTlivros,.divlivros,.texto_do_livro,.div-checkbox,.matérias-check,.div-cronograma,div.grid, section.section-members div.content > div.participantes, div.desc, div.secoes, .div-apresentacao, .div-apresentacao-reverse, div.section-disciplina, .disciplina-1, .div-main, .grid-layout, div.heading, .flex, .div-select, div.hr, .rodape,  .logo-saef, .input-header, .seila, .content, .text-lorem, .foto, .apresentacao-child, .div-input, .link, .conteudo-perguntas, .div-all, .perg, div.avaliacao, .name-user, div.resposta, div.avaliacao, div.input-perg, div.avaliacao-2, div.img-user-name, .user, .user-photo, .tabela-cronograma){
     padding: 1em 1.5em 1em 1.5em;
 }
 main{
@@ -112,7 +112,7 @@ nav{
     width: 6em;
     border-right: 1px solid #f1f1f1;
 }
-div img:not(.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input, div.user img, div.img-user-name > img, .name-user, .user-photo > img){
+div img:not(#meet,#estante,.livros,.hr img, .icons ul a img, section.filhos > #img-size, .tamanho-imagem, .imagem, .logo-saef > a > #logo-empe, .img-header  .list, .logo-header, .div-input .img-input, div.user img, div.img-user-name > img, .name-user, .user-photo > img){
     height: 5em;
     width: 7.2em;
     margin: auto;
@@ -739,24 +739,17 @@ div.img-user-name{
 .orgdoCL{
     display: flex;
     margin-left: 6em;
-    max-width: 80em;
+    gap: 5em;
 }
 .pCL{  
     margin-bottom: 2em;
     font-size: large;
-}
-.texto_do_livro{
-    width: 60%;
-    padding-left: 9em;
-}
+    text-align: justify;
+}  
 #titulopg{
-    padding-left: 4.2em;
+    margin-left: 5.1em;
     padding-bottom: 1em;
     font-size:x-large;
-}
-.divlivros{
-    width: 15%;
-    margin-left: 1em;
 }
 .titulolivros,.titulolivros2{
     color: #4d4d4d;
@@ -775,14 +768,15 @@ div.img-user-name{
     padding-bottom: 0.3em;
     background-color: rgb(124, 71, 22);
     border-radius: 0.5em;  
-    margin-left: 15%;
 }
-.divlivros#ldasemana,#lanterior,#loutros{
-    padding: 0;
+.livros-cent{
+    display: flex;
+    justify-content: center;
 }
 #btslivros{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height: min-content;
 }
 .lamargin{
     margin-bottom: 5em;
@@ -793,8 +787,7 @@ div.img-user-name{
     background-color: #5081FF;
     border-radius: 1.5em;
     font-size:small;
-    padding: 0.5em;
-    padding-top: 0.3em;
+    padding: 1em;
 }
 #estante{
     height: 18em;
@@ -812,6 +805,12 @@ div.img-user-name{
     border-top-right-radius: 0;
     margin-bottom: 3em;
     margin-top: 1em;
+    width: 100%;
+}
+.orgmeetpadrao{
+    display: flex;
+    justify-content: flex-end;
+    height:min-content ;
 }
 #reuniaosla{
     color: #4d4d4d;
@@ -829,30 +828,70 @@ div.img-user-name{
     padding: 0.2em;
 }
 .org-cronograma{
-    /* width: 100%; */
-    /* border: 2px solid #ccc;
-    border-radius: 10px; */
-    margin-left: 6em;
+    width: 100%;
+    margin-left: 5em;
     display: flex;
+    column-gap: 4em;
 }
-#bt-gerar{
-    padding: 1em;
-    color: white;
-    background: #077ef6;
-    border: none;
-    border-radius: 1.2em;
+.div-checkbox{
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 0.15em;
+    border-color: #A6A0A0;
+    padding: 1.5em 0em 1.5em 4em ;
 } 
 th, td{
     border: 1px solid #ccc;
 }
 .div-lateral{
-width: 30%;
+    width: 30%;
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 0.15em;
+    height: 50%;
+    font-size: 0.7em;
+    color: #65C8FF;
+    border-color: #A6A0A0 ;
+    align-content: space-between;
 }
 #form-cronograma{
-    width: 70%;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    width: 60%;
 }
+.margem-geral{
+    margin-left: 1em ;
+}
+.matérias-check,#titulo-checkbox{
+    padding: 0;
+    font-size: 1.5em;
+}
+#titulo-checkbox{
+    color:#4d4d4d;
+}
+.matérias-check{
+    color: #646060;
+}
+input[type="checkbox"] {
+    width: 2em; 
+    height: 1.5em;
+}
+.bt-cronograma{
+    display: flex;
+    justify-content: center;
+}
+#bt-gerar{
+    width: 30%;
+    height: 4em;
+    background-color: #5A84F0;
+    color: white;
+    border-radius: 2em ;
+    font-size: 1em;
+    border-color: #077ef6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* teste */
+
 /* até aqui */
 
 
@@ -923,7 +962,7 @@ td, th{
         margin: 2em 10em 2em 10em;
     }
     .member-name h2 {
-        font-size: 2.4em;
+        font-size: 1.8em;
     }
     .div-objetivos p{
         font-size: 1.4em;
@@ -939,11 +978,13 @@ td, th{
         min-width: calc(100% - 6em);
         margin-left: 6em;
     }
-    .orgdoCL{
-        display: flex;
-        flex-direction: column;
-    }
 
+
+}
+@media only screen and (min-width:1440px) {
+    .orgmeetajustada{
+        display: none;
+    }
 }
 @media only screen and (max-width:1024px) {
     div.secoes{
@@ -978,13 +1019,37 @@ td, th{
         display: block;
         position: fixed;
     }
-    .seila p {
-        font-size: 0.8em;
+    #form-cronograma{
+        width: 65%;
     }
-    .seila h2 {
-        font-size: 2.2em;
+    .orgdoCL{
+        display: block;
     }
-    
+    .divlivros{
+        display: flex;
+        gap: 2em;
+    }
+    .orgmeetpadrao{
+        display: none;
+    }
+    .livros{
+        width: 10em;
+        height: 15em;
+    }
+    #estante{
+        width: 15em;
+        height: 10em;
+    }
+    .BTlivros{
+        padding: 0.5em;
+    }
+    .titulolivros2{
+        font-size: 0.9em;
+    }
+    .outros-meet{
+        display: grid;
+        gap: 1em;
+    }
     /* .rodape{
         min-width: calc(100% - 6em);
         margin-left: 0;
@@ -1107,11 +1172,60 @@ td, th{
     section.all-section{
         padding: 0;
     }
-    .rodape{
-        margin: 0;
+    .div-lateral{
+        display: none;
     }
+    #form-cronograma{
+        width: 100%;
+    }
+    #titulo-checkbox{
+        padding-bottom: 1em;
+    }
+    .matérias-check{
+        padding: 0.2em;
 
-
+    }
+    input[type="checkbox"] {
+        width: 2.5em; 
+        height: 2.5em;
+    }    
+    .livros{
+        width: 8em;
+        height: 10em;
+    }
+    #estante{
+        width: 9em;
+        height: 6em;
+    }
+    .titulolivros2{
+        font-size: 0.8em;
+    }
+    .BTlivros{
+        padding: 0.3em;
+    }
+    #loutros{
+        display: grid;
+        justify-content: center;
+    }
+    #meet{
+        width: 2em;
+        height: 2em;
+    }
+    #reuniaosla{
+        font-size: medium;
+    }
+    #linkmeet{
+        font-size: small;
+    }
+    .divlivros{
+        gap: 0.8em;
+    }
+    #pcl4,#pcl5,#pcl6,#pcl7{
+        display: none;
+    }
+    .livros{
+        padding-left: 0.5em;
+    }
 }
 
 @media only screen and (max-width:425px){
@@ -1151,11 +1265,46 @@ td, th{
         height: 70%;
         background-color: white;
     }
-    .seila h2 {
-        font-size: 2em;
+    #titulo-checkbox{
+        padding-bottom: 0.1em;
     }
-    .seila p {
-        font-size: 0.8em;
+    .matérias-check{
+        padding: 0.2em;
+        font-size: 1.2em;
     }
-    
+    input[type="checkbox"] {
+        width: 1.5em; 
+        height: 1.5em;
+    }
+    .org-cronograma{
+        margin: 0;
+    }
+    #bt-gerar{
+        width: 50%;
+        height: 3em;
+        background-color: #5A84F0;
+        color: white;
+        border-radius: 2em ;
+        font-size: 1em;
+        border-color: #077ef6;
+    }
+    #titulopg{
+        text-align: center;
+        margin-left: 2em;
+    }
+    .divlivros{
+        display: block;
+    }
+    .orgdoCL{
+        margin: 0;
+    }
+    #titulopg{
+        margin: 0;
+    }
+    .orgmeetpadrao{
+        display: flex;
+    }
+    .orgmeetajustada{
+        display: none;
+    }
 }
